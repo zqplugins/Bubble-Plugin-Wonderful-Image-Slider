@@ -1,0 +1,808 @@
+{
+    "add_hover_pressed": true,
+    "add_is_visible": true,
+    "can_fit_height": true,
+    "can_fit_width": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 200,
+        "width": 400
+    },
+    "display": "Wonderful Image Slider V2",
+    "events": {
+        "aHFxg": {
+            "caption": "A Slide Double Clicked",
+            "name": "a_slide_double_clicked"
+        },
+        "aHFzC": {
+            "caption": "A Slide Clicked",
+            "name": "a_slide_clicked"
+        },
+        "aHFzT": {
+            "caption": "Slides Loaded",
+            "name": "slides_loaded"
+        }
+    },
+    "fields": {
+        "aHFxh": {
+            "caption": "Slides Per View",
+            "default_val": 1,
+            "doc": "Define how many elements will appear on a slide.",
+            "editor": "DynamicValue",
+            "in_style": true,
+            "name": "slides_per_view",
+            "optional": false,
+            "rank": 7,
+            "value": "number"
+        },
+        "aHFxi": {
+            "caption": "Space Between",
+            "default_val": 0,
+            "doc": "Define how many pixels of space there will be between the slides.",
+            "editor": "DynamicValue",
+            "in_style": true,
+            "name": "space_between",
+            "optional": true,
+            "rank": 8,
+            "value": "number"
+        },
+        "aHFxj": {
+            "caption": "Image List",
+            "doc": "Define a list of type \"image\".",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "image_list",
+            "optional": false,
+            "rank": 1,
+            "value": "image"
+        },
+        "aHFxk": {
+            "caption": "Pagination",
+            "default_val": true,
+            "doc": "Move between slides with dots, progressbar or fraction.",
+            "editor": "Checkbox",
+            "in_style": true,
+            "name": "pagination",
+            "rank": 12
+        },
+        "aHFxl": {
+            "caption": "Clickable Dots",
+            "default_val": true,
+            "doc": "If you want to switch between slides by clicking the dots, check this.",
+            "editor": "Checkbox",
+            "in_style": true,
+            "name": "pclickable",
+            "rank": 14
+        },
+        "aHFxm": {
+            "caption": "Show Navigation Arrows",
+            "default_val": false,
+            "doc": "Move between slides with arrows.",
+            "editor": "Checkbox",
+            "in_style": true,
+            "name": "navigation",
+            "rank": 11
+        },
+        "aHFxn": {
+            "caption": "Show Scroll Bar",
+            "default_val": false,
+            "doc": "If you want a scrollbar under the slide element, check this.",
+            "editor": "Checkbox",
+            "in_style": true,
+            "name": "scroll_bar",
+            "rank": 15
+        },
+        "aHFxo": {
+            "caption": "Hiding Scroll Bar Toggle",
+            "default_val": false,
+            "doc": "The scrollbar is hidden unless you interact with the scrollbar.",
+            "editor": "Checkbox",
+            "in_style": true,
+            "name": "hide_scroll_bar",
+            "rank": 16
+        },
+        "aHFxp": {
+            "caption": "Direction",
+            "default_val": "Horizontal",
+            "doc": "Indicate the direction of the slider.",
+            "editor": "Dropdown",
+            "in_style": true,
+            "name": "direction",
+            "optional": true,
+            "options": "Horizontal,Vertical",
+            "rank": 9
+        },
+        "aHFxq": {
+            "caption": "Centered",
+            "default_val": false,
+            "doc": "When you check this, your slides will be center aligned.",
+            "editor": "Checkbox",
+            "in_style": true,
+            "name": "centered",
+            "rank": 17
+        },
+        "aHFxr": {
+            "caption": "Free Mode",
+            "default_val": false,
+            "doc": "If you don't check this off, the center of the slide will necessarily be aligned on a slide.",
+            "editor": "Checkbox",
+            "in_style": true,
+            "name": "free_mode",
+            "rank": 18
+        },
+        "aHFxs": {
+            "caption": "Grab Cursor",
+            "default_val": false,
+            "doc": "Check here if you want the mouse cursor to be \"grab\" when you hover over the slide element with the mouse.",
+            "editor": "Checkbox",
+            "in_style": true,
+            "name": "grab_cursor",
+            "rank": 19
+        },
+        "aHFxt": {
+            "caption": "Loop",
+            "default_val": false,
+            "doc": "Check here if you want to switch to the first slide after the last slide.",
+            "editor": "Checkbox",
+            "in_style": true,
+            "name": "loop",
+            "rank": 20
+        },
+        "aHFxu": {
+            "caption": "Switching With Keyboard",
+            "default_val": false,
+            "doc": "Switching between slides with the keyboard.",
+            "editor": "Checkbox",
+            "in_style": true,
+            "name": "keyboard",
+            "rank": 27
+        },
+        "aHFxv": {
+            "caption": "Switching With Mouse Wheel",
+            "default_val": false,
+            "doc": "Switching between slides with mouse wheel.",
+            "editor": "Checkbox",
+            "in_style": true,
+            "name": "mousewheel",
+            "rank": 28
+        },
+        "aHFxw": {
+            "caption": "Autoplay (ms)",
+            "default_val": 0,
+            "doc": "If you want your slides to play automatically, set the time in milliseconds to play here. Leave this field with value 0 if you don't want it.",
+            "editor": "DynamicValue",
+            "in_style": true,
+            "name": "autoplay",
+            "optional": true,
+            "rank": 21,
+            "value": "number"
+        },
+        "aHFxx": {
+            "caption": "Disable Autoplay On Interaction",
+            "default_val": false,
+            "doc": "If you've set an autoplay time and want autoplay to stop when the user interacts with the slide, check here.",
+            "editor": "Checkbox",
+            "in_style": true,
+            "name": "disable_autoplay",
+            "rank": 26
+        },
+        "aHFxy": {
+            "caption": "Pagination Type",
+            "default_val": "Bullets",
+            "doc": "You must first mark the\" Pagination \" field.",
+            "editor": "Dropdown",
+            "in_style": true,
+            "name": "ptype",
+            "optional": true,
+            "options": "Bullets,Progressbar,Fraction",
+            "rank": 13
+        },
+        "aHFxz": {
+            "caption": "Image Width (%)",
+            "default_val": 100,
+            "doc": "Determine the width of the image inside the slide in percent.",
+            "editor": "DynamicValue",
+            "in_style": true,
+            "name": "element_width",
+            "optional": false,
+            "rank": 32,
+            "value": "number"
+        },
+        "aHFyA": {
+            "caption": "Image Height (%)",
+            "default_val": 100,
+            "doc": "Determine the height of the image inside the slide in percent.",
+            "editor": "DynamicValue",
+            "in_style": true,
+            "name": "element_height",
+            "rank": 33,
+            "value": "number"
+        },
+        "aHFyB": {
+            "caption": "Image Top Margin (%)",
+            "default_val": 0,
+            "doc": "Determine the top margin of the image.",
+            "editor": "DynamicValue",
+            "in_style": true,
+            "name": "element_margin",
+            "rank": 34,
+            "value": "number"
+        },
+        "aHFyC": {
+            "caption": "Image Border Width",
+            "default_val": 0,
+            "doc": "Enter the width of the image border.",
+            "editor": "DynamicValue",
+            "in_style": true,
+            "name": "element_border_width",
+            "optional": true,
+            "rank": 35,
+            "value": "number"
+        },
+        "aHFyD": {
+            "caption": "Image Background",
+            "default_val": "rgba(255,255,255,0)",
+            "doc": "Enter the color of the slide background.",
+            "editor": "DynamicValue",
+            "in_style": true,
+            "name": "element_background",
+            "optional": true,
+            "rank": 39,
+            "value": "text"
+        },
+        "aHFyE": {
+            "caption": "Arrows Color",
+            "default_val": "rgba(0, 122, 255, 1)",
+            "doc": "Enter the color of the arrows.",
+            "editor": "Color",
+            "in_style": true,
+            "name": "arrow_color",
+            "optional": true,
+            "rank": 45
+        },
+        "aHFyF": {
+            "caption": "LIST DEFINITIONS",
+            "editor": "Label",
+            "name": "list_definitions",
+            "rank": 0
+        },
+        "aHFyG": {
+            "caption": "CSS Customizations",
+            "editor": "Label",
+            "name": "css_definitions",
+            "rank": 30
+        },
+        "aHFyH": {
+            "caption": "PAGINATION SETTINGS",
+            "editor": "Label",
+            "name": "pagination_settings",
+            "rank": 10
+        },
+        "aHFyI": {
+            "caption": "SLIDE VIEW OPTIONS",
+            "editor": "Label",
+            "name": "slide_view_options",
+            "rank": 6
+        },
+        "aHFyJ": {
+            "caption": "Image Border Color",
+            "doc": "Enter the color of the image border.",
+            "editor": "Color",
+            "in_style": true,
+            "name": "element_border_color",
+            "optional": true,
+            "rank": 36
+        },
+        "aHFyK": {
+            "caption": "Image Border Style",
+            "default_val": "none",
+            "doc": "Enter the style of the image border.",
+            "editor": "Dropdown",
+            "in_style": true,
+            "name": "element_border_style",
+            "optional": true,
+            "options": "none,solid,dotted,dashed,double,groove,ridge,inset,outset",
+            "rank": 37
+        },
+        "aHFyL": {
+            "caption": "Image Border Radius",
+            "default_val": "0px 0px 0px 0px",
+            "doc": "First value applies to top-left corner, second value applies to top-right corner, third value applies to bottom-right corner, and fourth value applies to bottom-left corner.",
+            "editor": "DynamicValue",
+            "in_style": true,
+            "name": "element_border_radius",
+            "optional": true,
+            "rank": 38,
+            "value": "text"
+        },
+        "aHFyM": {
+            "caption": "Object Fit",
+            "default_val": "fill",
+            "doc": "Fill: This is default. The replaced content is sized to fill the element's content box. If necessary, the object will be stretched or squished to fit. None: The replaced content is not resized. Contain: The replaced content is scaled to maintain its aspect ratio while fitting within the element's content box. Cover: The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. The object will be clipped to fit. Scale-down: The content is sized as if none or contain were specified (would result in a smaller concrete object size).",
+            "editor": "Dropdown",
+            "in_style": true,
+            "name": "object_fit",
+            "optional": true,
+            "options": "fill,none,contain,cover,scale-down",
+            "rank": 31
+        },
+        "aHFyN": {
+            "caption": "Bullets Color",
+            "default_val": "rgba(0, 122, 255, 1)",
+            "doc": "Enter the color of the bullets.",
+            "editor": "Color",
+            "in_style": true,
+            "name": "dots_color",
+            "optional": true,
+            "rank": 52
+        },
+        "aHFyO": {
+            "caption": "Arrows Shadow Specification",
+            "default_val": "0px 0px 5px",
+            "doc": "Respectively: Horizontal Offset - Vertical Offset - Blur Radius.",
+            "editor": "DynamicValue",
+            "in_style": true,
+            "name": "arrows_shadow_spec",
+            "optional": true,
+            "rank": 46,
+            "value": "text"
+        },
+        "aHFyP": {
+            "caption": "Arrows Shadow Color",
+            "doc": "Define arrows shadow color.",
+            "editor": "Color",
+            "in_style": true,
+            "name": "arrows_shadow_color",
+            "optional": true,
+            "rank": 47
+        },
+        "aHFyQ": {
+            "caption": "Bullets Shadow Specification",
+            "default_val": "0px 0px 5px",
+            "doc": "Respectively: Horizontal Offset - Vertical Offset - Blur Radius.Respectively: Horizontal Offset - Vertical Offset - Blur Radius.",
+            "editor": "DynamicValue",
+            "in_style": true,
+            "name": "dots_shadow_spec",
+            "optional": true,
+            "rank": 54,
+            "value": "text"
+        },
+        "aHFyR": {
+            "caption": "Bullets Shadow Color",
+            "doc": "Define bullets shadow color.",
+            "editor": "Color",
+            "in_style": true,
+            "name": "dots_shadow_color",
+            "optional": true,
+            "rank": 55
+        },
+        "aHFyS": {
+            "caption": "Text List",
+            "doc": "Define a text list for the slides to contain text if you want.",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "text_list",
+            "optional": true,
+            "rank": 3,
+            "value": "text"
+        },
+        "aHFyU": {
+            "caption": "Text Top (%)",
+            "default_val": 50,
+            "doc": "Define the position of the text in Y dimension.",
+            "editor": "DynamicValue",
+            "in_style": true,
+            "name": "text_top",
+            "optional": true,
+            "rank": 40,
+            "value": "number"
+        },
+        "aHFyV": {
+            "caption": "Text Left (%)",
+            "default_val": 50,
+            "doc": "Define the position of the text in X dimension.",
+            "editor": "DynamicValue",
+            "in_style": true,
+            "name": "text_left",
+            "optional": true,
+            "rank": 41,
+            "value": "number"
+        },
+        "aHFyW": {
+            "caption": "Text Shadow Specifications",
+            "default_val": "0px 0px 5px",
+            "doc": "Respectively: Horizontal Offset - Vertical Offset - Blur Radius.",
+            "editor": "DynamicValue",
+            "in_style": true,
+            "name": "text_shadow_spec",
+            "optional": true,
+            "rank": 43,
+            "value": "text"
+        },
+        "aHFyX": {
+            "caption": "Text Shadow Color",
+            "doc": "Define text shadow color.",
+            "editor": "Color",
+            "in_style": true,
+            "name": "text_shadow_color",
+            "optional": true,
+            "rank": 44
+        },
+        "aHFyY": {
+            "caption": "--------------------------------------------------",
+            "editor": "Label",
+            "name": "----",
+            "rank": 56
+        },
+        "aHFyZ": {
+            "caption": "Imgix Parameters",
+            "editor": "Label",
+            "name": "imgix_parameters",
+            "rank": 57
+        },
+        "aHFya": {
+            "caption": "--------------------------------------------------",
+            "editor": "Label",
+            "name": "---",
+            "rank": 58
+        },
+        "aHFyb": {
+            "caption": "*** Add Auto Parameters ***",
+            "doc": "Check it out: https://docs.imgix.com/apis/rendering/auto/auto",
+            "editor": "Label",
+            "in_style": true,
+            "name": "automatic",
+            "optional": true,
+            "options": "compress,enhance,redeye",
+            "rank": 66
+        },
+        "aHFyc": {
+            "caption": "DPR",
+            "default_val": 2,
+            "doc": "Check it out: https://docs.imgix.com/apis/rendering/pixel-density/dpr",
+            "editor": "DynamicValue",
+            "in_style": true,
+            "name": "dpr",
+            "optional": true,
+            "rank": 62,
+            "value": "number"
+        },
+        "aHFyd": {
+            "caption": "Fit",
+            "default_val": "max",
+            "doc": "Check it out: https://docs.imgix.com/apis/rendering/size/fit",
+            "editor": "Dropdown",
+            "in_style": true,
+            "name": "fit",
+            "optional": true,
+            "options": "max,clamp,clip,crop,fill,none",
+            "rank": 63
+        },
+        "aHFye": {
+            "caption": "Width",
+            "doc": "Adjust the size of the picture. If you leave it blank, the default values will be the values where the wonderful image slider is drawn in the editor.",
+            "editor": "DynamicValue",
+            "in_style": true,
+            "name": "imgixw",
+            "optional": true,
+            "rank": 60,
+            "value": "number"
+        },
+        "aHFyf": {
+            "caption": "Height",
+            "doc": "Adjust the size of the picture. If you leave it blank, the default values will be the values where the wonderful image slider is drawn in the editor.",
+            "editor": "DynamicValue",
+            "in_style": true,
+            "name": "imgixh",
+            "optional": true,
+            "rank": 61,
+            "value": "number"
+        },
+        "aHFyg": {
+            "caption": "Compress",
+            "default_val": true,
+            "doc": "Imgix will apply best-effort techniques to reduce the size of the image",
+            "editor": "Checkbox",
+            "in_style": true,
+            "name": "compress",
+            "optional": true,
+            "rank": 67,
+            "value": "boolean"
+        },
+        "aHFyh": {
+            "caption": "Enhance",
+            "default_val": false,
+            "doc": "The enhancement gives images a more vibrant appearance",
+            "editor": "Checkbox",
+            "in_style": true,
+            "name": "enhance",
+            "optional": true,
+            "rank": 68,
+            "value": "boolean"
+        },
+        "aHFyi": {
+            "caption": "Format",
+            "default_val": false,
+            "doc": "Imgix determines whether the image can be served in a better format by a process called automatic content negotiation",
+            "editor": "Checkbox",
+            "in_style": true,
+            "name": "format",
+            "optional": true,
+            "rank": 69,
+            "value": "boolean"
+        },
+        "aHFyj": {
+            "caption": "Red-eye",
+            "default_val": false,
+            "doc": "Red-eye removal is applied to any detected faces",
+            "editor": "Checkbox",
+            "in_style": true,
+            "name": "redeye",
+            "optional": true,
+            "rank": 70,
+            "value": "boolean"
+        },
+        "aHFyk": {
+            "caption": "Quality",
+            "default_val": 45,
+            "doc": "Image quality",
+            "editor": "DynamicValue",
+            "in_style": true,
+            "name": "quality",
+            "optional": true,
+            "rank": 65,
+            "value": "number"
+        },
+        "aHFyl": {
+            "caption": "Manual Quality",
+            "default_val": false,
+            "doc": "If you check this, auto = compress  feature will be disabled",
+            "editor": "Checkbox",
+            "in_style": true,
+            "name": "manualquality",
+            "optional": true,
+            "rank": 64,
+            "value": "boolean"
+        },
+        "aHFym": {
+            "caption": "Use Imgix Parameters",
+            "default_val": false,
+            "doc": "If you check this property, you can use below properties",
+            "editor": "Checkbox",
+            "in_style": true,
+            "name": "useimgix",
+            "optional": true,
+            "rank": 59,
+            "value": "boolean"
+        },
+        "aHFyp": {
+            "caption": "---------------------------------------------------",
+            "editor": "Label",
+            "name": "---",
+            "rank": 71
+        },
+        "aHFyq": {
+            "caption": "Default Image",
+            "default_val": "//meta.cdn.bubble.io/f1682332824898x700592401662315000/image-not-available.svg",
+            "doc": "This image will be used in case your images list or alternative images list is broken",
+            "editor": "DynamicValue",
+            "in_style": false,
+            "name": "defaultImage",
+            "optional": true,
+            "rank": 72,
+            "value": "image"
+        },
+        "aHFys": {
+            "caption": "ALT Image List",
+            "doc": "Define a list of type \"image\" as an alternative one.",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "alt_img_list",
+            "optional": true,
+            "rank": 2,
+            "value": "image"
+        },
+        "aHFyx": {
+            "caption": "Arrows Size (px)",
+            "default_val": 44,
+            "doc": "Navigation arrows size. By default it is 44px",
+            "editor": "DynamicValue",
+            "name": "arrows_size",
+            "optional": true,
+            "rank": 48,
+            "value": "number"
+        },
+        "aHFyy": {
+            "caption": "Swipe Speed (ms)",
+            "default_val": 300,
+            "doc": "This parameter controls the duration of the transition between slides (in milliseconds).",
+            "editor": "DynamicValue",
+            "in_style": true,
+            "name": "swipe_speed",
+            "optional": true,
+            "rank": 22,
+            "value": "number"
+        },
+        "aHFzB": {
+            "caption": "Disable Autoplay on Hover",
+            "default_val": true,
+            "doc": "Disable slider \"Autoplay\" on mouse hover. If you are using bubble conditionals (hover) stop using it and use this checkbox.",
+            "editor": "Checkbox",
+            "in_style": true,
+            "name": "disable_autoplay_on_hover",
+            "rank": 25
+        },
+        "aHFzG": {
+            "caption": "Lazy Loading",
+            "default_val": true,
+            "doc": "Content is lazy loaded in the slider when required",
+            "editor": "Checkbox",
+            "in_style": true,
+            "name": "lazy",
+            "rank": 23
+        },
+        "aHFzH": {
+            "caption": "Effect",
+            "default_val": "slide",
+            "doc": "Transition effect",
+            "editor": "Dropdown",
+            "in_style": true,
+            "name": "effect",
+            "options": "slide,fade,cube,coverflow,flip",
+            "rank": 24
+        },
+        "aHFzI": {
+            "caption": "Zoom",
+            "default_val": false,
+            "doc": "Swiper supports zoom images functionality (similar to what you see on iOS when browsing single photo) where you can zoom-in image by pinch gesture and or by zoom-in/out by double tap on it.",
+            "editor": "Checkbox",
+            "in_style": true,
+            "name": "zoom",
+            "rank": 29
+        },
+        "aHFzM": {
+            "caption": "Arrows Background",
+            "doc": "Navigation arrows background color",
+            "editor": "Color",
+            "in_style": true,
+            "name": "arrows_background",
+            "optional": true,
+            "rank": 50
+        },
+        "aHFzN": {
+            "caption": "Arrows Border Radius",
+            "default_val": 5,
+            "doc": "Navigation arrows border radius",
+            "editor": "DynamicValue",
+            "name": "arrows_border_radius",
+            "optional": true,
+            "rank": 51,
+            "value": "number"
+        },
+        "aHFzO": {
+            "caption": "Text Background",
+            "default_val": "rgba(0,0,0,0)",
+            "doc": "Background for the text element.",
+            "editor": "Color",
+            "in_style": true,
+            "name": "text_background",
+            "optional": true,
+            "rank": 42
+        },
+        "aHFzP": {
+            "caption": "Arrow wrapper size",
+            "default_val": 50,
+            "doc": "Arrow wrapper size",
+            "editor": "DynamicValue",
+            "name": "arrow_wrapper_size",
+            "optional": true,
+            "rank": 49,
+            "value": "number"
+        },
+        "aHFzU": {
+            "caption": "Dots Inactive Color",
+            "default_val": "rgba(0,0,0,1)",
+            "doc": "Enter the color of inactive dots",
+            "editor": "Color",
+            "in_style": true,
+            "name": "dots_color_inactive",
+            "optional": true,
+            "rank": 53
+        },
+        "aHFzW": {
+            "caption": "URL List",
+            "doc": "Define a text list with a link so that your user goes to a link when they click the text on the slider.",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "url_list",
+            "optional": true,
+            "rank": 4,
+            "value": "text"
+        },
+        "aHFzX": {
+            "caption": "ALT List",
+            "doc": "The required alt attribute specifies an alternate text for an image, if the image cannot be displayed.",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "alt_list",
+            "optional": true,
+            "rank": 5,
+            "value": "text"
+        }
+    },
+    "icon": "ion-images",
+    "property_applications": {
+        "Background": true,
+        "Border": true,
+        "BoxShadow": true,
+        "Font": true,
+        "MinWidth": true,
+        "resizable": true
+    },
+    "states": {
+        "aHFyt": {
+            "caption": "Active Index",
+            "doc": "Index number of currently active slide.",
+            "initialization_code": {
+                "fn": "function(properties, context) { return 1 }"
+            },
+            "name": "active_index",
+            "value": "number"
+        },
+        "aHFyu": {
+            "caption": "Clicked Index",
+            "doc": "Index number of last clicked slide.",
+            "initialization_code": {
+                "fn": "function(properties, context) {}"
+            },
+            "name": "clicked_index",
+            "value": "number"
+        },
+        "aHFzD": {
+            "caption": "Double Clicked Index",
+            "doc": "Index number of last double clicked slide.",
+            "initialization_code": {
+                "fn": "function(properties, context) {}"
+            },
+            "name": "double_clicked_index",
+            "value": "number"
+        },
+        "aHFzJ": {
+            "caption": "Image List",
+            "doc": "Image list from slider",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "image_list",
+            "value": "text"
+        },
+        "aHFzK": {
+            "caption": "Clicked Index Image",
+            "doc": "Clicked slide image url",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "clicked_index_image",
+            "value": "text"
+        },
+        "aHFzL": {
+            "caption": "Double Clicked Index Image",
+            "doc": "Double clicked slide image url",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "double_clicked_index_image",
+            "value": "text"
+        },
+        "aHFzS": {
+            "caption": "Loading",
+            "doc": "If slider is still loading",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "loading",
+            "value": "boolean"
+        }
+    }
+}

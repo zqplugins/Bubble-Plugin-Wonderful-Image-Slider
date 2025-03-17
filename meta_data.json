@@ -1,0 +1,18 @@
+{
+    "categories": {
+        "0": "media",
+        "1": "containers",
+        "2": "image",
+        "3": "small business",
+        "4": "technical"
+    },
+    "data_tracked": false,
+    "demo_page": "https://wonderfulplugins.bubbleapps.io/version-test/wonderful-slider",
+    "description": "This plugin has been recently acquired by Zeroqode - please bear with us while we review the code and make improvements/fixes where necessary.\n\nA fully responsive image slider with customizable options. Centered image, looping and autoplay and more! \nCustomizable arrows, bullets, background images and more!\n\nWe have released the V2 of the Slider, which is faster, more responsive, and easier to use! \nThe V2 Slider has improved performance, design, and functionality. \nTo enjoy these benefits, please make sure to install the updated V2 of the plugin when adding the element to your page.\n\nMake your application more efficient with fully responsive image sliders! \n\n[color=#0000ff][size=4]✨[b]FEATURES:[/b][/size][/color]\nPagination options \nArrows\nDots\nProgress Bar\nFraction\nScrollbar\n\nUpgrade your experience with our Wonderful Video & Image Slider! \nNow, not only images but also videos can slide seamlessly on your website. \nDon’t limit your creativity, let it slide! https://bubble.io/plugin/wonderful-video--image-slider-1598087530793x315369716811825150\n\n👛 Please support our efforts to keep this plugin free—your donations help us invest the time and resources needed to continue maintaining and improving it for everyone's benefit:  [color=#1AAFD0][url=https://zeroqo.de/support]https://zeroqo.de/support[/color][/url].\n\nTo receive special offers and important updates please visit: https://zeroqo.de/updates\n\n🔔 Get our 15 Top Plugins Bundle with 15 most popular plugins for only 20$/month.\nPlugins included in the Bundle:\n\n- Bubble Page to PDF converter\n- Stripe Marketplace Express\n- Air Calendar (Full Calendar 5.9.0)\n- AWS File uploader - Any size\n- Advanced Rich Text Editor\n- Mapbox Map\n- Phone Input Number with Formatting\n- Advanced Multi Uploader\n- Video Player\n- Dynamic Height & Width of Elements\n- Audio Recorder\n- Repeating Group to CSV\n- Print Pro\n- Advanced Audio Player\n- Easy File Downloader\n\nGet it here: https://zeroqode.com/bundle\n\nNEED HELP BUILDING A CUSTOM APPLICATION?\nhttps://dev.zeroqode.com\n\nSUPERCHARGE YOUR APP WITH ZEROQODE PLUGINS\nhttps://zeroqode.com/plugins\n\nQUESTIONS OR NEED HELP?\nhttps://forum.zeroqode.com",
+    "image": "//s3.amazonaws.com/appforest_uf/f1599999787292x846058227134172200/pictusel-h5p-org.png",
+    "license": "open_source",
+    "link": "https://docs.zeroqode.com/plugins/wonderful-image-slider",
+    "name": "Wonderful Image Slider",
+    "plugin_instructions": "Please refer to the plugin documentation to see how to configure it: https://docs.zeroqode.com/plugins/wonderful-image-slider",
+    "sa_node_version": 18
+}

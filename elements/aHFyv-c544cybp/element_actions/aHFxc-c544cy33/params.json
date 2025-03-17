@@ -1,0 +1,15 @@
+{
+    "caption": "Slide To",
+    "doc": "Enter the index of the slide you want to be active when the action takes place.",
+    "fields": {
+        "aHFxd": {
+            "caption": "index",
+            "default_val": 0,
+            "doc": "Enter a slide index for the transition",
+            "editor": "DynamicValue",
+            "name": "index",
+            "rank": 0,
+            "value": "number"
+        }
+    }
+}

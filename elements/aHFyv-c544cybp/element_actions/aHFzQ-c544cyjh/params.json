@@ -1,0 +1,14 @@
+{
+    "caption": "Zoom",
+    "fields": {
+        "aHFzR": {
+            "caption": "Scale",
+            "default_val": 1,
+            "doc": "Zoom scale, default original scale is 1.",
+            "editor": "DynamicValue",
+            "name": "scale",
+            "rank": 0,
+            "value": "number"
+        }
+    }
+}
